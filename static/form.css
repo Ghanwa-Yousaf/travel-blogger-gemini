@@ -1,0 +1,200 @@
+/* Set background color and font */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styling */
+.header {
+  background-color: #9d4141;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  color: #333333;
+  font-size: 30px;
+}
+
+/* Main container styling */
+.main {
+  display: ruby-text;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  
+}
+
+
+.container {
+  margin: 20px auto;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width:60%; /* Adjust the width as needed */
+  max-width: 7  00px; /* Limit the maximum width */
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+
+.image {
+  flex: 1; 
+
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+
+input #image-upload-button {
+  display: none;
+}
+
+.file-name {
+  color: #666666;
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+.content {
+  flex: none; 
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  width: 40%;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 30px;
+  color: #333333;
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Style for the form container */
+.form-container {
+  width: 80%; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form labels */
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+/* Style for form inputs */
+.form-container input[type="text"],
+.form-container input[type="file"] {
+  width:100%; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  color:#f0f0f0;
+  border-radius: 5px;
+  background-color: #062b53;
+}
+.form-container input[type="text"]#id_input_text:hover {
+  background-color: #011427; 
+}
+
+
+/* Style for the submit button */
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #89c333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.form-container button[type="submit"]:hover {
+  background-color: #025012;
+}
+
+
+
+/* Hover effect for the file upload input button */
+.form-container input[type="file"]#image-upload:hover {
+  background-color: #011427; 
+}
+
+/* Style for the file input container */
+.file-input-container {
+  position: relative;
+}
+
+/* Style for the file input */
+#file-upload {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Style for the custom file upload button */
+.custom-file-upload {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  color:#f0f0f0;
+  border-radius: 5px;
+  background-color: #062b53;
+}
+
+/* Hover effect for the custom file upload button */
+.custom-file-upload:hover {
+  background-color: #011427;
+}
+
+/* Style for the file input button (targeted by ID) */
+#file-upload-button {
+  
+  background-color: #062b53;
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the file input button (targeted by ID) */
+#file-upload-button:hover {
+  background-color: #011427; 
+}
+
+

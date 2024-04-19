@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap')
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="head">
+            <h1 class="logo">Travel Journal Blogger</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Blog Post</h2>
+        <p>{{ response }}</p>
+        <button id="downloadButton">Download</button>
+    </div>
+
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function() {
+            var textToDownload = document.querySelector('.container').innerText;
+            var blob = new Blob([textToDownload], { type: "text/plain" });
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = "blog_post.txt";
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        });
+    </script>
+</body>
+</html>

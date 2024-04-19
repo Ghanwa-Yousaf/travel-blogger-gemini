@@ -1,0 +1,51 @@
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap')
+    </style>
+<head>
+    <title>Image to Text</title>
+    <link rel="stylesheet" href="/static/form.css"> 
+
+</head>
+<body>
+    <header class="header">
+        <div class="head">
+            <h1 class="logo">Travel Journal Blogger</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h2>Upload a Photo</h2>
+                <div class="form-container">
+                    <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="lau63ixXvDe0twy5KGcNWMOALqxp0OWnHwymkpT9KApYSbZQADBdyRnvOL8ucftP">
+
+  
+  <p>
+    <div class="file-input-container">
+        <input id="file-upload" type="file" name="image" onchange="updateText(this)">
+        <label for="file-upload" class="custom-file-upload">Choose File</label>
+    </div>  
+    
+  </p>
+  
+  <p>
+    <label for="id_input_text">Enter Description:</label>
+    <input type="text" name="input_text" maxlength="500" id="id_input_text">
+    
+    
+  </p>
+                        <button type="submit">Generate</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/static/Blue%20Modern%20Travel%20(Facebook%20Post).png" alt="Image">
+            </div>
+        </div>
+    </main>
+
+
+</body></html>
